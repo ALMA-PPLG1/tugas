@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var binatang={
+            jenis:'kucing',
+            nama:'lele',
+            warna:'kuning,putih',
+            jumlah_kaki:4,
+            mata:{
+                warna_mata:'putih',
+                warna_pupil:'hitam'
+            },
+            saat_dipanggil: function (){
+                return "nyamperin dengan semangat"
+            },
+            hobi_lele: function (){
+                return "suka tidur di ruangan kamar"
+            }
+        }
+
+        document.write(`Jenis: ${binatang.jenis}`+"<br/>");
+        document.write(`Nama: ${binatang.nama}`+"<br/>");
+        document.write(`Warna: ${binatang.warna}`+"<br/>");
+        document.write(`Jumlah kaki: ${binatang.jumlah_kaki}`+"<br/>");
+        document.write(`Warna mata: ${binatang.mata.warna_mata}`+"<br/>");
+        document.write(`Warna pupil: ${binatang.mata.warna_pupil}`+"<br/>");
+        document.write(`saat dipanggil: ${binatang.saat_dipanggil()}`+"<br/>");
+        document.write(`hobi: ${binatang.hobi_lele()}`+"<br/>");
+    </script>
+</body>
+</html>
