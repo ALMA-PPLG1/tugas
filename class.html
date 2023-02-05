@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class siswa {
+            constructor(nama,kelas,jurusan,tahun_lahir,alamat){
+                this.nama=nama
+                this.kelas=kelas
+                this.jurusan=jurusan
+                this.tahun_lahir=tahun_lahir
+                this.alamat=alamat
+            }
+            umur (){
+                var umur=this.tahun_lahir
+                var tahun=2023
+                return (tahun-umur)
+            }
+        }
+
+        var nama1= new siswa("ibnu",10,"pplg1",2008,"gandoang")
+        document.write(`nama: ${nama1.nama}`+"<br/>")
+        document.write(`kelas: ${nama1.kelas}`+"<br/>")
+        document.write(`umur ibnu: ${nama1.umur()}`+"<br/>")
+        document.write(`jurusan: ${nama1.jurusan}`+"<br/>")
+        document.write(`alamat: ${nama1.alamat}`+"<br/>")
+        
+    </script>
+</body>
+</html>
